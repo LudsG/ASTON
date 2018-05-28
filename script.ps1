@@ -36,10 +36,12 @@
 #$tests = Read-Host "Donne moi un mot"
 #$tests.Length
 
-$tests = Read-Host "Donne moi un nombre"
+#$tests = Read-Host "Donne moi un nombre"
+#
+#if ($tests%2 -eq 0) {
+#    echo "nombre pair"
+#} else {
+#    echo "nombre impair"
+#    }
 
-if ($tests%2 -eq 0) {
-    echo "nombre pair"
-} else {
-    echo "nombre impair"
-    }
+echo toto
