@@ -44,4 +44,70 @@
 #    echo "nombre impair"
 #    }
 
-echo toto
+#function exo13
+#{
+#    $num = Read-Host "Donne un nombre entre 10 et 20"
+#
+#    if ($num -lt10 -or $num -gt 20) {
+#        echo "pas bon";
+#        exo13
+#    } else {
+#        echo "bon"
+#        }
+#}
+#exo13
+
+
+#function exo14
+#{
+#    [int] $num = Read-Host "Donne un nombre"
+#    
+#    for ($i=1; $i -le 10; $i++){
+#    $num+$i
+#    }
+#}
+#exo14
+
+#function exo15
+#{
+#[int] $num = Read-Host "Donne un nombre"
+#   
+#    for ($i=1; $i -le 10; $i++){
+#    $num*$i
+#    }
+#}
+#exo15
+
+#function exo16
+#{
+#[int] $num = Read-Host "Donne un nombre"
+#[int] $count = 0   
+#    for ($i=1 ; $i -le $num ; $i++){
+#        $count = $i + $count
+#        $count
+#    }
+#}
+#exo16
+
+function exo17
+{
+    [int] $age = Read-Host "Donne l'âge d'un enfant"
+
+    if ($age -eq 6 -or $age -eq 7)
+    {
+        echo "Poussin"
+    } 
+    elseif ($age -eq 8 -or $age -eq 9)
+    {
+        echo "Pupille"
+    }
+    elseif ($age -eq 10 -or $age -eq 11)
+    {
+        echo "Minime"
+    }
+    elseif ($age -ge 12)
+    {
+        echo "Cadet"
+    }
+}
+exo17
